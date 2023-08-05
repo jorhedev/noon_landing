@@ -1,0 +1,162 @@
+
+.containerBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 1036px;
+    height: 80px;
+    background-color: #ffffff;
+    border-radius: 25px 25px 0 0;
+    margin-top: 150px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    height: 80px;
+}
+
+.contentBox{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #858585;
+    padding: 30px;
+}
+
+.contentBox img {
+    margin-right: 20px; 
+}
+
+
+.boton  {
+    padding-left: 10px;
+    margin-left: auto; /* Empuja el botón hacia la derecha ocupando el espacio restante */
+    background-color: #3D5CFF;
+    width: 43px;
+    height: 43px;
+    border: none;
+    border-radius: 50%;
+}
+
+.boxTwo{
+    display: flex;
+    width: 1036px;
+    height: 135px;
+    background-color: #ffffff;
+    border-radius: 0 0 25px 25px;
+    margin-bottom: 70px;
+    border-top: 2px solid #EAE9EA;
+    box-shadow: 0 25px 25px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.contentTwo{
+    display: flex;
+    align-items:center;
+    align-content: center;
+    height: 135px;
+    width: 1036px;
+}
+
+.contentBoxTwo{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    gap: 30px;
+    padding-left: 30px;
+
+}
+
+.boxes {
+    flex-grow: 1; /* Permite que los boxes ocupen el espacio disponible en la fila */
+    display: flex;
+    width: 0;
+    height: 53px;
+    transition: 1s;
+
+}
+
+.boxes .imagen{
+    padding-right: 15px; 
+}
+
+.boxes h2{
+    font-size: 26px;
+    font-weight: 700;
+    color:#191919;
+    margin: 0;
+}
+
+.boxes p{
+    font-size: 14px;
+    font-weight: 600;
+    color:#858585;
+    margin-top: 2px;
+}
+
+.boxes:hover{
+    transform: translateY(-10px);
+    transition: 1s;
+}
+
+@media screen and (max-width: 768px) {
+    .contentBox img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contentBox {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .boxTwo {
+        padding: 5px;
+    }
+
+    .contentBoxTwo {
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 5px;
+    }
+
+    .boxes {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: auto;
+    }
+
+    .boxes .imagen {
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .boxes h2 {
+        font-size: 22px;
+    }
+
+    .boxes p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+

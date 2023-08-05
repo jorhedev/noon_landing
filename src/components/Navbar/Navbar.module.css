@@ -1,0 +1,136 @@
+
+.container{
+    display: flex;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: transparent; /* Set a solid background color */
+}
+
+.box{
+    margin-top: 73px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 110px;
+}
+
+
+.fBox{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    gap: 53px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    width: 105px;
+    height: 40px;
+    border-radius: 50px;
+    transition: 2s;
+}
+
+.icon:hover{
+    transform: scale(1.1) ;
+
+}
+
+.fBox .icon a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 2s;
+    width: 105px;
+    height: 40px;
+}
+
+.icon a:hover {
+    color: #3D5CFF;
+}
+
+.fBox .image{
+    transform: scale(.9);
+}
+
+
+.fBox a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.fbox a:hover {
+    color: #3D5CFF;
+}
+
+
+
+/* Agregar Media Queries para hacer el Navbar responsive */
+
+/* Para pantallas más pequeñas, ajustar el Navbar */
+@media screen and (max-width: 768px) {
+    .box {
+        flex-direction: column; /* Cambiar la dirección para apilar elementos en pantallas pequeñas */
+        align-items: center; /* Centrar elementos en pantallas pequeñas */
+    }
+
+    .fBox {
+        flex-direction: row; /* Cambiar la dirección para apilar elementos en pantallas pequeñas */
+        align-items: center; /* Centrar elementos en pantallas pequeñas */
+        margin-top: 20px; /* Reducir el margen superior para pantallas más pequeñas */
+    }
+
+    .icon {
+        width: 80px; /* Reducir el tamaño del icono para pantallas más pequeñas */
+        height: 30px; /* Reducir el tamaño del icono para pantallas más pequeñas */
+    }
+
+    .fBox .icon a {
+        width: 80px; /* Reducir el tamaño del enlace para pantallas más pequeñas */
+        height: 30px; /* Reducir el tamaño del enlace para pantallas más pequeñas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+        margin-top: 90px;
+        flex-direction: column; /* Cambiar la dirección para apilar elementos en pantallas muy pequeñas */
+        align-items: center; /* Centrar elementos en pantallas muy pequeñas */
+    }
+
+    .fBox {
+        flex-direction: row; /* Cambiar la dirección para apilar elementos en pantallas muy pequeñas */
+        align-items: center; /* Centrar elementos en pantallas muy pequeñas */
+        margin-top: 20px; /* Reducir el margen superior para pantallas muy pequeñas */
+
+    }
+
+    .icon {
+        width: 60px; /* Reducir aún más el tamaño del icono para pantallas muy pequeñas */
+        height: 25px; /* Reducir aún más el tamaño del icono para pantallas muy pequeñas */
+    }
+
+    .fBox .icon a {
+        width: 60px; /* Reducir aún más el tamaño del enlace para pantallas muy pequeñas */
+        height: 25px; /* Reducir aún más el tamaño del enlace para pantallas muy pequeñas */
+    }
+}

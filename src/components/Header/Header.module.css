@@ -1,0 +1,96 @@
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    width: 500px;
+    margin-top: 50px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+
+.box h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 102px;
+    font-weight: 700;
+    line-height: 102px;
+}
+
+.box span{
+    display: block;
+    margin-top: -65px;
+    font-family: 'Inter', sans-serif;
+    font-size: 102px;
+    font-weight: 700;
+    line-height: 102px;
+    white-space: nowrap;
+    width: 8ch;
+}
+
+.box p{
+    margin-top: 25px;
+    font-family: 'Inter', sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #88888C;
+}
+
+.box button{
+    margin-top: 35px;
+    display: flex;
+    width: 165px;
+    height: 55px;
+    border: none;
+    border-radius: 50px;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    background-color: #3D5CFF;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.box button:hover{
+    background-color: black;
+    transform: scale(0.9) ;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        margin-top: 100px;
+        width: 100%; /* Ajustar el ancho para ocupar todo el espacio disponible */
+        padding: 20px; /* Reducir el relleno para pantallas más pequeñas */
+        margin-left: 50px;
+    }
+
+    .box h1 {
+        margin: 0;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .box span {
+        margin-top: 0;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .box p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 15px;
+    }
+
+    .box button {
+        margin-top: 20px;
+    }
+}
